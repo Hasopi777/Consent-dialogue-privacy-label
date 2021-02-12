@@ -1,0 +1,22 @@
+{
+    "manifest_version":2,
+    "name": "Privacy label Extension",
+    "description": "Support label for Consent dialogues",
+    "version": "1.0",
+    "permissions":["activeTab", "declarativeContent", "tabs", "https://www.google.com/*"],
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "js":["content.js"],
+            "css":["background.css"]
+        }
+    ],
+    "browser_action":{
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["./background.js"],
+        "persistent": false
+    }
+}
