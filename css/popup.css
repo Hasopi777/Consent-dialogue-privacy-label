@@ -10,6 +10,18 @@ body {
     background-color: antiquewhite;
 }
 
+
 #summaryTitle{
     text-decoration: underline;
+}
+
+#urlDiv{
+    border-style: solid;
+    border-color: black;
+    background-color:rgb(149, 223, 236)
+}
+#currentUrl{
+    font-size:x-small;
+    text-align: center;
+    font-weight: bold;
 }
