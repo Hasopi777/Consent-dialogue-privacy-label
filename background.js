@@ -6,3 +6,5 @@
 //         }
 //     })
 // })
+
+document.getElementById("cdDetection").innerHTML = "<p>No consent dialogue was detected</p>"
