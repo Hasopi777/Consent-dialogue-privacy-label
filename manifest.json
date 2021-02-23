@@ -3,11 +3,11 @@
     "name": "Privacy label Extension",
     "description": "Support label for Consent dialogues",
     "version": "1.0",
-    "permissions":["activeTab", "declarativeContent", "tabs", "storage"],
+    "permissions":["activeTab", "declarativeContent", "tabs", "storage", "https://www.google.com/"],
     "content_scripts":[
         {
             "matches":["<all_urls>"],
-            "js":["content.js"],
+            "js":["content.js", "foreground.js"],
             "css":["./css/background.css"]
         }
     ],
