@@ -8,17 +8,16 @@ chrome.storage.sync.get(console.log);
 chrome.storage.sync.get(function(result) {
     console.log(JSON.stringify(result));
     for(var key in result){
-        console.log(key);
-        console.log(result[key]);
+        // console.log(key);
+        // console.log(result[key]);
         if(result[key] == true){
             console.log('hi')
-            document.getElementById("rectangles").innerHTML = "<p>hii</p>"
-            // rect.insertAdjacentHTML('afterend', '<p>hi</>');
-            // var tag = document.createElement("p");
-            // var text = document.createTextNode("Tutorix is the best e-learning platform");
-            // tag.appendChild(text);
-            // var element = document.getElementById("new");
-            // element.appendChild(tag);
+            // document.getElementById("rectangles").innerHTML = "<p>hii</p>"
+            
+            var node = document.createElement("LI");
+            var textNode = document.createTextNode(key);
+            node.appendChild(textNode);
+            document.getElementById("rectangles").appendChild(node);
         }else{
             console.log('bye');
         }

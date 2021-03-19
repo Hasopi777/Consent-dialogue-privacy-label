@@ -25,3 +25,24 @@ body {
     text-align: center;
     font-weight: bold;
 }
+#rectangles ul{
+    padding: 2em;
+}
+
+#rectangles li{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    padding: 2em;
+    border: 1px solid black;
+    
+}
+
+#getBtn{
+    background-color: #4CAF50;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+
+}
