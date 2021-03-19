@@ -3,6 +3,7 @@
     "name": "Privacy label Extension",
     "description": "Support label for Consent dialogues",
     "version": "1.0",
+    "minimum_chrome_version": "46",
     "permissions":["activeTab", "declarativeContent", "tabs", "storage", "https://www.google.com/"],
     "content_scripts":[
         {
@@ -17,6 +18,7 @@
         "default_title": "Privacy label online consent dialogues"
         
     },
+    "content_security_policy": "script-src 'self' 'sha256-WOdSzz11/3cpqOdrm89LBL2UPwEU9EhbDtMy2OciEhs='",
     "background": {
         "scripts": ["./background.js"],
         "persistent": false

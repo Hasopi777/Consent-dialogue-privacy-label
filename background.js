@@ -12,3 +12,4 @@ chrome.tabs.query({active: true, windowId: chrome.windows.WINDOW_ID_CURRENT}, (t
 });
 
 document.getElementById("cdDetection").innerHTML = "<p>No consent dialogue was detected</p>"
+

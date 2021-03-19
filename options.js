@@ -5,7 +5,7 @@ function saveOptions(){
     var scan = document.getElementById('scan-opt').checked;
     var store = document.getElementById('store-opt').checked;
     var identification = document.getElementById('identification-opt').checked;
-
+    
     chrome.storage.sync.set({
         location: location,
         advertisement: advertisement,
@@ -20,6 +20,11 @@ function saveOptions(){
             status.textContent='';
         }, 750);
     });
+    
 }
 
 document.getElementById('save').addEventListener('click',saveOptions);
+
+
+
+console.log('hi');
