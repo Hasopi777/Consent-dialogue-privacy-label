@@ -24,6 +24,23 @@ chrome.storage.sync.get(function(result) {
     }
 });
 
+document.getElementById("goToOptions").addEventListener("click", optionsBtn);
+
+function optionsBtn(){
+        chrome.tabs.create({'url': "/options.html" } )
+}
+
+
+// var optionsUrl = chrome.extension.getURL("options.html"); 
+// var content = '<a href="' + optionsUrl + '" target="_blank">Options</a>';
+
+// document.querySelector('#goToOptions').addEventListener(function(){
+//     if(chrome.runtime.openOptionsPage){
+//         chrome.runtime.openOptionsPage();
+//     }else{
+//         window.open(chrome.runtime.getURL('options.html'));
+//     }
+// });
 //if true value, make square
 
 
