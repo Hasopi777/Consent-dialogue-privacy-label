@@ -23,14 +23,16 @@ chrome.storage.sync.get(function(result) {
         }
     }
 });
-
+console.log(window.document);
+// console.log("hasan");
 document.getElementById("goToOptions").addEventListener("click", optionsBtn);
 
 function optionsBtn(){
         chrome.tabs.create({'url': "/options.html" } )
 }
 
-
+console.log(window);
+console.log("salah");
 // var optionsUrl = chrome.extension.getURL("options.html"); 
 // var content = '<a href="' + optionsUrl + '" target="_blank">Options</a>';
 
