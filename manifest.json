@@ -8,7 +8,7 @@
     "content_scripts":[
         {
             "matches":["<all_urls>"],
-            "js":["content.js", "foreground.js", "scraper.js"],
+            "js":["content.js", "foreground.js", "scraper.js", "navigation.js"],
             "css":["./css/background.css"]
         }
     ],

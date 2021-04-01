@@ -1,28 +1,38 @@
-// const puppeteer = require('puppeteer');
 
-// (async() => {
-//     let quantcastUrl = 'https://www.quantcast.com/';
 
-//     let browser = await puppeteer.launch({ headless: false });
-//     let page = await browser.newPage();
+window.onload = function(){
+    console.log('lmaos');
+    window.document.querySelector('#qc-cmp2-ui > div.qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled > div > button:nth-child(2)').click();
+    // window.addEventListener('DOMContentLoaded', start);
+    select();
+}
 
-//     await page.goto(quantcastUrl, {waitUntil: 'networkidle2'});
 
-//     let data = await page.evaluate(() => {
-//         let quantcastText = document.querySelector('#qc-cmp2-ui > div.qc-cmp2-consent-info > div > div > p').innerText;
-//         console.log(quantcastText);
-//         return{
-//             quantcastText
-//         }
-//     });
-//     console.log(data);
-//     debugger;
-//     await browser.close();
-// })
-console.log("salah");
-console.log(window.document.querySelector('#qc-cmp2-ui > div.qc-cmp2-scrollable-section').innerText);
+function select(){
+    console.log('opop');
+  
+    console.log(document.querySelector('#qc-cmp2-ui > div.qc-cmp2-scrollable-section').querySelectorAll('li.qc-cmp2-list-item '));
+    console.log(document.querySelectorAll('#qc-cmp2-ui > div.qc-cmp2-scrollable-section > ul.css-s5kaq7 > li:nth-child(1) > button > p.qc-cmp2-list-item-title'));
+}
+// console.log(window.document.querySelector('#qc-cmp2-ui > div.qc-cmp2-scrollable-section').innerText);
+// #qc-cmp2-ui > div.qc-cmp2-scrollable-section > ul
+
+
+
+// function clickMoreOptionsBtn(){
+//     window.document.querySelector('#qc-cmp2-ui > div.qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled > div > button:nth-child(2)').click();
+//     console.log(window.document.body.querySelector('#qc-cmp2-ui > div.qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled > div > button:nth-child(2)'));
+// }
+
+// clickMoreOptionsBtn();
+
+// // function scrapeScrollableSection(){
+// //     console.log(window.document.querySelector('#qc-cmp2-ui > div.qc-cmp2-scrollable-section'));
+// // }
+
+// scrapeScrollableSection();
+// console.log(window.document.querySelector('#qc-cmp2-ui > div.qc-cmp2-scrollable-section').innerText);
 
 //document.querySelector('#qc-cmp2-ui > div.qc-cmp2-scrollable-section').querySelectorAll('li.qc-cmp2-list-item ')
 //document.querySelector('#qc-cmp2-ui > div.qc-cmp2-scrollable-section')
 
-window.querr
