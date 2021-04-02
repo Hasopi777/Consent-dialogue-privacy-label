@@ -6,13 +6,20 @@ function saveOptions(){
     var store = document.getElementById('store-opt').checked;
     var identification = document.getElementById('identification-opt').checked;
     
-    chrome.storage.sync.set({
-        location: location,
-        advertisement: advertisement,
-        scan: scan,
-        store: store,
-        identification: identification
-    }, function() {
+    var state = {
+        options: {
+            location: location,
+            advertisement: advertisement,
+            scan: scan,
+            store: store,
+            identification: identification
+        },
+        match: [],
+
+    }
+//set object elements as list of keywords
+
+    chrome.storage.sync.set(state, function() {
         //lets user know that their options were saved
         var status = document.getElementById('status');
         status.textContent = 'Options saved';
