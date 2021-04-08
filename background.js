@@ -11,5 +11,14 @@ chrome.tabs.query({active: true, windowId: chrome.windows.WINDOW_ID_CURRENT}, (t
     document.getElementById("currentUrl").innerHTML = (tabs[0].url);
 });
 
-document.getElementById("cdDetection").innerHTML = "<p>No consent dialogue was detected</p>"
-
+// chrome.storage.sync.get(function(state){
+//     chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
+//         if (msg.action === "updateIcon") {
+//                 if(state.match != null){
+//                     chrome.browseAction.setIcon({path: "/assets/red-x.png"});
+//                 }else{
+//                     chrome.browseAction.setIcon({path: "/assets/green-tick.png"});
+//                 }
+//             }
+//     });
+// });

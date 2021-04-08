@@ -25,7 +25,10 @@ chrome.storage.sync.get(function(state) {
     }
 });
 
-
+chrome.runtime.sendMessage({
+    action: 'updateIcon',
+    value: false
+});
 
 document.getElementById("goToOptions").addEventListener("click", optionsBtn);
 
