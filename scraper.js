@@ -54,11 +54,24 @@ function scrollSelect(){
 function highlightDiv(){
     console.log('started');
     // var div = document.querySelector('#qc-cmp2-ui > div.qc-cmp2-scrollable-section').querySelectorAll('li.qc-cmp2-list-item ');
-    var div = document.querySelector("#qc-cmp2-ui > div.qc-cmp2-scrollable-section");
+    var div = document.querySelector("#qc-cmp2-ui > div.qc-cmp2-scrollable-section").querySelector('li.qc-cmp2-list-item ');
     console.log('middle')
     var colour = "yellow";
     div.style.backgroundColor = colour;
     console.log('changed')
 }
 
+function removeHighlight(){
+    var div = document.querySelector("#qc-cmp2-ui > div.qc-cmp2-footer > div.qc-cmp2-buttons-desktop > button.css-flk0bs");
+    div.style.backgroundColor = "transparent";
+    div.style.color = "blue";
+}
+
+function highlightBtn(){
+    var div = document.querySelector("#qc-cmp2-ui > div.qc-cmp2-footer > div.qc-cmp2-buttons-desktop > button.css-14v0a5j")
+    div.style.backgroundColor = "#90ee90";
+}
+
 setTimeout(highlightDiv, 5000);
+setTimeout(removeHighlight,5000);
+setTimeout(highlightBtn,5000);
