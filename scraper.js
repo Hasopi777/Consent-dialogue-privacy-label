@@ -34,6 +34,7 @@ function scrollSelect(){
                         if(!matchedKeys.includes(key)){
                             matchedKeys.push(key);
                         }//if key doesnt exists in array, push it
+                        scrollSection[i].style.backgroundColor = "#FF4433";
                     }
                 }
             }
@@ -51,15 +52,15 @@ function scrollSelect(){
     
 }
 
-function highlightDiv(){
-    console.log('started');
-    // var div = document.querySelector('#qc-cmp2-ui > div.qc-cmp2-scrollable-section').querySelectorAll('li.qc-cmp2-list-item ');
-    var div = document.querySelector("#qc-cmp2-ui > div.qc-cmp2-scrollable-section").querySelector('li.qc-cmp2-list-item ');
-    console.log('middle')
-    var colour = "yellow";
-    div.style.backgroundColor = colour;
-    console.log('changed')
-}
+// function highlightDiv(){
+//     console.log('started');
+//     // var div = document.querySelector('#qc-cmp2-ui > div.qc-cmp2-scrollable-section').querySelectorAll('li.qc-cmp2-list-item ');
+//     var div = document.querySelector("#qc-cmp2-ui > div.qc-cmp2-scrollable-section").querySelector('li.qc-cmp2-list-item ');
+//     console.log('middle')
+//     var colour = "yellow";
+//     div.style.backgroundColor = colour;
+//     console.log('changed')
+// }
 
 function removeHighlight(){
     var div = document.querySelector("#qc-cmp2-ui > div.qc-cmp2-footer > div.qc-cmp2-buttons-desktop > button.css-flk0bs");
@@ -72,6 +73,5 @@ function highlightBtn(){
     div.style.backgroundColor = "#90ee90";
 }
 
-setTimeout(highlightDiv, 5000);
 setTimeout(removeHighlight,5000);
 setTimeout(highlightBtn,5000);

@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="./css/popup.css">`
-        
-    </head>
-
+        <link rel="stylesheet" href="./css/popup.css">
     <body>
-        <h1 id="title">Privacy label for online consent dialogues</h1>
-        
+       
+        <h1 id="title"><span style="font-weight:800">Privacy</span>Label</h1>
+        <button id="goToOptions">Select Your Risks</button><br>
+        <a id="moreInfoBtn" href="info.html">More Information</a> 
         <div class="subHeading" id="urlDiv">
             <p id="currentUrl"></p>
         </div>
-        <div id="cdDetection"></div>
-        <h2 class="heading" id="summaryTitle">Summary of violations</h2>
-        <script type="text/javascript" src="background.js"></script>
+        <br>
+        <div id="summaryDiv">
+            <h2 class="heading" id="summaryTitle">Summary of violations</h2>
+            <script type="text/javascript" src="background.js"></script>
 
-        <button id="goToOptions">Select your risks</button>
-        
-        <script type="text/javascript" src="content.js"></script>
-        
-        <div id="rectangles"></div>
+            
+            
+            <script type="text/javascript" src="content.js"></script>
+            
+            <div id="rectangles"></div>
+        </div>
         <!-- <script src="./puppeteer/utils/browser/puppeteer-web.js"></script> -->
     </body>
 </html>

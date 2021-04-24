@@ -13,7 +13,7 @@ chrome.storage.sync.get(function(state) {
         if(state.options[key] == true){
             console.log('hi')
             // document.getElementById("rectangles").innerHTML = "<p>hii</p>"
-            var colour = state.match.includes(key) ? "red" : "green"
+            var colour = state.match.includes(key) ? "#FF4433" : "#50C878"
             var node = document.createElement("LI");
             var textNode = document.createTextNode(key);
             node.style.backgroundColor = colour;

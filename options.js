@@ -9,9 +9,9 @@ function saveOptions(){
     var state = {
         options: {
             location: location,
-            advertisement: advertisement,
+            ads: advertisement,
             scan: scan,
-            store: store,
+            Store: store,
             identification: identification
         },
         match: [],
