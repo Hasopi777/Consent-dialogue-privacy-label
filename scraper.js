@@ -62,15 +62,26 @@ function scrollSelect(){
 //     console.log('changed')
 // }
 
+
 function removeHighlight(){
     var div = document.querySelector("#qc-cmp2-ui > div.qc-cmp2-footer > div.qc-cmp2-buttons-desktop > button.css-flk0bs");
     div.style.backgroundColor = "transparent";
-    div.style.color = "blue";
+    div.style.color = "rgb(32, 109, 197)";
+    // div.onmouseover = function(){
+    //     div.style.color = "green";
+    // }
+    div.addEventListener("mouseover", mouseHover)
+}
+
+function mouseHover(){
+    var div = document.querySelector("#qc-cmp2-ui > div.qc-cmp2-footer > div.qc-cmp2-buttons-desktop > button.css-flk0bs");
+    div.style.color = "green";
 }
 
 function highlightBtn(){
     var div = document.querySelector("#qc-cmp2-ui > div.qc-cmp2-footer > div.qc-cmp2-buttons-desktop > button.css-14v0a5j")
-    div.style.backgroundColor = "#90ee90";
+    div.style.backgroundColor = "rgb(32, 109, 197)";
+    div.style.color = "white";
 }
 
 setTimeout(removeHighlight,5000);
