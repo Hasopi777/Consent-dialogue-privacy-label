@@ -10,9 +10,7 @@ window.onload = function(){
 
 
 function scrollSelect(){
-    console.log('opop');
     console.log(document.querySelector('#qc-cmp2-ui > div.qc-cmp2-scrollable-section').querySelectorAll('li.qc-cmp2-list-item '));
-    console.log('asdf')
 
     var scrollSection = document.querySelector('#qc-cmp2-ui > div.qc-cmp2-scrollable-section').querySelectorAll('li.qc-cmp2-list-item ');
     console.log(scrollSection);

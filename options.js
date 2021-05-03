@@ -32,6 +32,3 @@ function saveOptions(){
 
 document.getElementById('save').addEventListener('click',saveOptions);
 
-
-
-console.log('hi');
